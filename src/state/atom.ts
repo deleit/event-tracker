@@ -7,15 +7,15 @@ export const listaDeEventosState = atom<IEvento[]>({
     default: [
         {
             "descricao": "Estudar React",
-            "inicio": new Date("2022-11-15T09:00"),
-            "fim": new Date("2022-11-15T13:00"),
+            "inicio": new Date("2022-11-25T09:00"),
+            "fim": new Date("2022-11-25T13:00"),
             "completo": false,
             "id": 1642342747
         },
         {
             "descricao": "Estudar Recoil",
-            "inicio": new Date("2022-11-16T09:00"),
-            "fim": new Date("2022-11-16T11:00"),
+            "inicio": new Date("2022-11-26T09:00"),
+            "fim": new Date("2022-11-26T11:00"),
             "completo": false,
             "id": 1642342959
         }
@@ -24,5 +24,5 @@ export const listaDeEventosState = atom<IEvento[]>({
 
 export const filtroDeEventos = atom<IFiltroDeEventos>({
     key: 'filtroDeEventos',
-    default: {}
+    default: {completo: 'ambos'}
 })
